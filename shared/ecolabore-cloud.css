@@ -1,0 +1,37 @@
+﻿
+html, body { margin:0; padding:0; min-height:100vh; overflow:hidden; font-size:100%; }
+* { box-sizing:border-box; }
+
+/* Menu */
+#menu, #toolbox { z-index:1; }
+.menu-container { position:relative; }
+div.menu-container { width:100%; }
+.menu-item { padding:0.3em; }
+div.menu-item { width:100%; }
+div.menu-item > .menu-label { display:inline-block; width:220px; }
+.menu-submenu { position:absolute; top:0; left:100%; width:300px; border:2px ridge #ccc; padding:0.3em; }
+span > .menu-submenu { position:absolute; top:100%; left:0; }
+#toolbox > .menu-container > .menu-item { font-size:200%; display:inline-block; padding:1em; border:2px ridge #ccc; }
+#toolbox > .menu-container > .menu-item.active { border:2px groove #ccc; }
+
+@media (max-width:400px) {
+.menu-submenu { position:absolute; top:0; left:0; }
+.menu-container { position:static; }
+}
+
+/* Colors */
+body { background-color:#afc; color:#000; font-size:1.2rem; }
+
+#menu, #toolbar, .menu-submenu { background-color:#ccc; color:#000; }
+#menu [aria-disabled], #toolbar [aria-disabled] { color:#666; }
+#menu .focus, #toolbar .focus { color:#fff; background-color:#008; }
+#menu [aria-disabled].focus, #toolbar [aria-disabled].focus { color:#ccc; background-color:#339; }
+
+button, .button, { color:#fff; background-color:#063; font-weight:bold; }
+#list > div { width:100%; }
+#tree .group { padding-left:2em; }
+[aria-selected="true"] { color:#fff; background-color:#396; }
+#tree:focus .focus, #list:focus .focus { color:#000; background-color:#acf; }
+#tree:focus .focus[aria-selected="true"], #list:focus .focus[aria-selected="true"] { color:#fff; background-color:#369; }
+
+[hidden] { display:none !important; }

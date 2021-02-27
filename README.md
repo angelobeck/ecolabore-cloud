@@ -1,2 +1,4 @@
 # ecolabore-cloud
-Accessible enviroment 
+
+It is an accessible enviroment with some simple desktop like tools.
+

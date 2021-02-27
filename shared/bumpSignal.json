@@ -1,0 +1,19 @@
+{
+"label":"Onda triangular, corrente de fuga e ruído",
+"ploter":"waveLine",
+"x":"Tempo (milisseugundos)",
+"xGradation":1,
+"xMeasure":"ms",
+"xColumn":0,
+"y":"Tensão (milivolts)",
+"yGradation":1,
+"yMeasure":"v",
+"columns":[
+
+{
+"label":"Tempo (milissegundos)",
+"display":false
+}
+
+]
+}

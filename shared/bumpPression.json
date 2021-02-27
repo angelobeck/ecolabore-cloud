@@ -1,0 +1,24 @@
+﻿{
+"label":"Simulação de medidas de pressão por 1 ano",
+"ploter":"colorScaleBox",
+"columns":[
+
+{
+"label":"Dia",
+"hidden":true
+},
+
+{
+"label":"Alta"
+},
+
+{
+"label":"Baixa"
+},
+
+{
+"label":"Diferença"
+}
+
+]
+}

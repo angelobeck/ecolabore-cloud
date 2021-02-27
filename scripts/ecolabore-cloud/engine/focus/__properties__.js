@@ -1,0 +1,2 @@
+
+me.elementInFocus = false;

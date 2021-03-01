@@ -11,7 +11,7 @@ static function dispatch($document)
 { // function dispatch
 
 $document->render->scripts[] = $document->urlFiles('ecolabore-cloud/ecolabore-cloud.js', true, '-scripts');
-$document->render->scripts[] = $document->urlFiles('ecolabore-cloud-calculator/ecolabore-cloud-calculator.js', true, '-scripts');
+$document->render->scripts[] = $document->urlFiles('ecolabore-cloud/ecolabore-cloud-calculator.js', true, '-scripts');
 } // function dispatch
 
 } // class eclApp_cloudCalculator

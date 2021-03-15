@@ -16,6 +16,11 @@ me.element.addEventListener("keydown", me.eventKeyDown);
 me.element.addEventListener("keyup", me.eventKeyUp);
 me.element.addEventListener("focus", me.eventFocus);
 me.element.addEventListener("click", me.eventClick);
+
+me.element.addEventListener("dragenter", me.eventDragEnter, false);
+me.element.addEventListener("dragover", me.eventDragOver, false);
+me.element.addEventListener("drop", me.eventDrop, false);
+
 engine.focus.elementInFocus = me.element;
 me.element.focus();
 

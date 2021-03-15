@@ -25,6 +25,6 @@ return;
 
 event.stopPropagation();
 event.preventDefault();
-shortcut.action.exec(shortcut.argument);
+shortcut.action.exec(shortcut.argument, event);
 
 };

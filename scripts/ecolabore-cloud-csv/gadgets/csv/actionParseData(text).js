@@ -14,11 +14,15 @@ rows[linesLength - 1] = [];
 for(let x = 0; x < linesLength; x++){
 rows[x] = [];
 let line = lines[x];
+line = line.replace(/\t+$/, '');
 let parts = line.split("\t");
 let partsLength = parts.length;
-
+let value = 0;
 for(let y = 0; y < partsLength; y++){
-let value = parseFloat(parts[y]);
+if(parts[y].length == 0)
+value = 0;
+else
+value = parseFloat(parts[y]);
 
 if(!columns[y])
 columns[y] = { "min":0, "max":0, "hidden":false };

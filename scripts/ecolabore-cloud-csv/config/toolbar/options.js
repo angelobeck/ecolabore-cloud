@@ -132,6 +132,68 @@ me.options = [
 }
 
 ]
+},
+
+{
+"label":"<",
+"toolTip":"Retroceder um passo",
+"action":"csvOffsetX",
+"argument":"ArrowLeft",
+"children":[
+
+{
+"label":"Deslocar à esquerda",
+"falseShortcut":"ArrowLeft",
+"action":"csvOffsetX",
+"argument":"ArrowLeft"
+},
+
+{
+"label":"Quadro anterior",
+"falseShortcut":"PageUp",
+"action":"csvOffsetX",
+"argument":"PageUp"
+},
+
+{
+"label":"Início",
+"falseShortcut":"Home",
+"action":"csvOffsetX",
+"argument":"Home"
+}
+
+]
+},
+
+{
+"label":">",
+"toolTip":"Deslocar à direita",
+"action":"csvOffsetX",
+"argument":"ArrowRight",
+"children":[
+
+{
+"label":"Deslocar à direita",
+"falseShortcut":"ArrowRight",
+"action":"csvOffsetX",
+"argument":"ArrowRight"
+},
+
+{
+"label":"Próximo quadro",
+"falseShortcut":"PageDown",
+"action":"csvOffsetX",
+"argument":"PageDown"
+},
+
+{
+"label":"Fim",
+"falseShortcut":"End",
+"action":"csvOffsetX",
+"argument":"End"
+}
+
+]
 }
 
 ];

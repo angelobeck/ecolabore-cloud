@@ -14,6 +14,12 @@ me.options = [
 "children":[
 
 ]
+},
+
+{
+"label":"Abrir arquivo local",
+"shortcut":"o",
+"action":"fileOpenLocal"
 }
 
 ]

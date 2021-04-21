@@ -1,0 +1,28 @@
+
+/*
+0 year
+2 year
+4 month
+6 day
+8 hour
+10 minutes
+12 x
+
+14 x
+16 SIS 128
+18 x
+20 DIA 89
+22 x
+24 MAP 102
+26 x
+28 FC 81
+30 x
+32 ?
+34 x
+36 Estado
+38 x
+40 ?
+42 x
+
+PP 39 = sis - dia
+*/

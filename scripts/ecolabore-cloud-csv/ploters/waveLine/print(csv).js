@@ -31,6 +31,9 @@ var yPrevious;
 for(let c = 0; c < columns.length; c++){
 if(columns[c].hidden)
 continue;
+if(columns[c].dataType && columns[c].dataType != 'int' && columns[c].dataType != 'float')
+continue;
+
 
 image.colorPalette(c);
 

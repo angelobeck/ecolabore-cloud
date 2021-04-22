@@ -29,11 +29,11 @@ me.awpParseRow = function(fromHex) {
 const year = parseInt(fromHex.substr(0, 4), 16);
 const month = parseInt(fromHex.substr(4, 2), 16);
 const day = parseInt(fromHex.substr(6, 2), 16);
-const date = year + '-' + month + '-' + day;
+const date = year + '-' + me.awpPad(month) + '-' + me.awpPad(day);
 
 const hour = parseInt(fromHex.substr(8, 2), 16);
 const minutes = parseInt(fromHex.substr(10, 2), 16);
-const time = hour + ':' + minutes;
+const time = me.awpPad(hour) + ':' + me.awpPad(minutes);
 
 const sis = parseInt(fromHex.substr(16, 2), 16);
 const dia = parseInt(fromHex.substr(20, 2), 16);
@@ -68,4 +68,14 @@ column.max = value;
 else if(column.max < value)
 column.max = value;
 }
+
+return row;
 };
+
+me.awpPad = function(number) {
+var str = '' + number;
+if(str.length < 2)
+return '0' + str;
+else
+return str;
+}

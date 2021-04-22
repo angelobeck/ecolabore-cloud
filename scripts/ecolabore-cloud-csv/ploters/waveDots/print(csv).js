@@ -29,6 +29,8 @@ for(let c = 0; c < columns.length; c++){
 let column = columns[c];
 if(column.hidden)
 continue;
+if(column.dataType && column.dataType != 'int' && column.dataType != 'float')
+continue;
 
 image.colorPalette(c);
 

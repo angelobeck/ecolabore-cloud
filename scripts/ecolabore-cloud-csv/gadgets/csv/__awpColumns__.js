@@ -3,37 +3,45 @@ me.awpColumns = [
 
 {
 "label":"Date",
+"dataType":"date",
 "hidden":true
 },
 
 {
 "label":"Time",
+"dataType":"date",
 "hidden":true
 },
 
 {
-"label":"SIS"
+"label":"SIS",
+"dataType":"int"
 },
 
 {
-"label":"DIA"
+"label":"DIA",
+"dataType":"int"
 },
 
 {
-"label":"MAP"
+"label":"MAP",
+"dataType":"int"
 },
 
 {
-"label":"FC"
+"label":"FC",
+"dataType":"int"
 },
 
 {
 "label":"Estado",
+"dataType":"int",
 "hidden":true
 },
 
 {
-"label":"PP"
+"label":"PP",
+"dataType":"int"
 }
 
 ];

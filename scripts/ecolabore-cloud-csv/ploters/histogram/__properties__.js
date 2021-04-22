@@ -1,0 +1,4 @@
+﻿
+me.menuOption = {
+"label":"Histograma"
+};
